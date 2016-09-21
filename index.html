@@ -22,39 +22,38 @@
       <section class="module parallax parallax-one">
         <div class="title">
           <h1>Jonathan Scoville</h1>
-          <h3>Junior Front End Developer</h3>
+          <h3>Front End Developer</h3>
         </div>
         <div class="work-button">
-          <a href="#content-one"><p>View My Projects</p></a>
+          <a href="#content-one"><p>About</p></a>
         </div></a>
       </section>
     </header>
 
     <section class="module content content-one" id="content-one">
-    <h1>Who am I?</h1>
-      <div class="row">
+    <h1>About Me</h1>
+      <div class="row about">
         <div class="col-md-12">
-          <p>After spending over a decade in the Automotive industry as a Service TechnicianA dedicated junior front end developer. I have recently embarked on this endless journey into the world of web development. </p>
+          <p>I am a Jr. Front End Developer with a passion for web development.  I was a automotive technician for over a decade before an idea for a web application inspired me to learn to code, and I haven't looked back. I am a current student of Computer Science and former student at DevMountain code school where I gained my invaluable foundation for web development.</p>
         </div>
       
       </div> <!-- row div -->
     </section>
 
     <section class="module parallax parallax-two">
-      <h1>Projects</h1>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-4 projects">
-              <p>Itunes API</p>
+        <div class="row hobby-display">
+          <h1>My Hobby's</h1>
+            <div class="col-md-4 about-one">
+              <img src="../css/images/IMG_3642.jpg">
             </div>
-            <div class="col-md-4 projects">
-              <p>Scoville Automotive</p>
+            <div class="col-md-4 about-two">
+              <img src="../css/images/family2.jpg">
             </div>
-            <div class="col-md-4 projects">
-              <p>Computer Store</p>
+            <div class="col-md-4 about-three">
+              <img src="../css/images/family.jpg">
             </div>
-          </div>
+          
         </div>
       </div>
 
@@ -68,16 +67,34 @@
     </section>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       
-      $('a').click(function(){  //creating smooth scroll to anchors
-        $('html, body').animate({
-          scrollTop: $( $(this).attr('href') ).offset().top
-        }, 1000);
-        return false;
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
       });
+    } // End if
+  });
+});
 
     </script>
   </body>
