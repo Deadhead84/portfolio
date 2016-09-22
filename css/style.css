@@ -37,8 +37,8 @@ header {
 	border-radius: 50px;
 	text-align: center;
 	color: #fff;
-	background-color: #fff;
-	transition: all .50s;
+	background: #F0F0F0;
+	transition: all .30s;
 }
 a:focus, a:hover {
 	color: black;
@@ -65,8 +65,8 @@ a:visited {
 
 .work-button:hover {
 	color: white;
-	/*background: rgba(10, 9, 9, 0.80);*/
-	background-color: rgba(115, 159, 115, 0.7);
+	background: rgba(10, 9, 9, 0.30);
+	/*background-color: rgba(115, 159, 115, 0.7);*/
 	
 }
 
@@ -115,17 +115,22 @@ a:visited {
 }*/
 .about-one img {
 	max-width: 100%;	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about-two img {
 	max-width: 100%;
-	transform: rotate(180deg);
 	margin: -1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	image-orientation: from-image;
 }
 
 .about-three img {
 	max-width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
 .parallax-two h1 {
 	margin: 0;
 	padding: 20px;
