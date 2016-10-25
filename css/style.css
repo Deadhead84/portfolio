@@ -96,7 +96,10 @@ a:visited {
 .parallax-two {
 	height: 400px;
 	width: 100%;
-	background-color: #F0F0F0;
+	background: url("../css/images/codebackground.jpeg") no-repeat center center fixed; /* this gave background image effect that I have*/ 
+	background-size:   cover;                      
+/*  	background-repeat: no-repeat;
+  	background-position: center center; */
 }
 
 /*.hobby-display {
@@ -137,6 +140,13 @@ a:visited {
 	text-align: center;
 	color: #6A787C;
 }
+
+.project-display h1 {
+	
+	letter-spacing: 2px;
+	color: white;
+}
+
 .projects {
 	height: 75px;
 }
@@ -154,4 +164,31 @@ a:visited {
 	padding: 20px;
 	width: 33.1%;
 }*/
-@media ()
+@media (max-width: 716px) {
+	.about {
+	font-size: 18px;
+	margin: 5px;
+
+	}
+
+	.content {
+	width: 100%;
+	height: 400px;
+	background-color: #F0F0F0;
+	color: #6A787C;
+	}
+
+	.content-one h1 {
+	margin: 0 auto;
+	padding-top: 50px;
+	text-align: center;
+	}
+
+	.parallax-two {
+		height: 500px;
+	}
+
+	.images {
+		max-width: 75px;
+	}
+}
