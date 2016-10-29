@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Francois+One');
 
 html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	overflow-x: hidden;
 	font-family: 'Kanit', sans-serif;
 	color: black;
 }
 
+.parallax {
+	width: 100%;
+	position: static;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
 header {
-	height: 100%;
+	height: 700px;
 	background: url("https://images.unsplash.com/photo-1458571037713-913d8b481dc6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=994&q=80&cs=tinysrgb") no-repeat center center fixed; /* this gave background image effect that I have*/ 
 	background-size:   cover;                      
   	background-repeat: no-repeat;
@@ -27,8 +35,6 @@ header {
 	color: #fff;
 	font-weight: bold;
 }
-
-
 
 .work-button {
 	margin: 0 auto;
@@ -74,6 +80,24 @@ a:visited {
 	text-decoration: none;
 	color: white;
 }
+
+.social-media {
+	width: 215px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.social-media a {
+	color: white;
+}
+
+.social-media li {
+		display: inline;
+		text-align: center;
+		padding: 3px;
+	}
+
+
 .content {
 	width: 100%;
 	height: 300px;
@@ -93,13 +117,15 @@ a:visited {
 	vertical-align: center;
 }
 
+
+
 .parallax-two {
-	height: 400px;
-	width: 100%;
-	background: url("../css/images/codebackground.jpeg") no-repeat center center fixed; /* this gave background image effect that I have*/ 
+	background: url("../css/images/codebackground.jpg") no-repeat center center fixed;
 	background-size:   cover;                      
-/*  	background-repeat: no-repeat;
-  	background-position: center center; */
+  	background-repeat: no-repeat;
+  	background-position: center center; 
+  	width: 100%;
+  	color: white;
 }
 
 /*.hobby-display {
@@ -116,6 +142,13 @@ a:visited {
 	margin: 0;
 	padding: 0;
 }*/
+.project-display h1 {
+
+	letter-spacing: 2px;
+	color: white;
+	font-family: 'Bungee Shade', cursive;
+}
+
 .about-one img {
 	max-width: 100%;	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -125,7 +158,6 @@ a:visited {
 	max-width: 100%;
 	margin: -1;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	image-orientation: from-image;
 }
 
 .about-three img {
@@ -138,23 +170,18 @@ a:visited {
 	margin: 0;
 	padding: 20px;
 	text-align: center;
-	color: #6A787C;
 }
 
-.project-display h1 {
-	
-	letter-spacing: 2px;
-	color: white;
-}
+
 
 .projects {
 	height: 75px;
 }
 
-.parallax-two p {
+/*.parallax-two p {
 	margin-top: 30px;
 	color: white;
-}
+}*/
 
 
 /*.projects {

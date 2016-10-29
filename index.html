@@ -8,8 +8,10 @@
     <title>Jon Scoville's Portfolio</title>
 
     <!-- Bootstrap -->
-    <link rel="icon" href="">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="css/images/logo.png">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--     <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
@@ -18,17 +20,27 @@
 
   </head>
   <body>
-    <header> 
       <section class="module parallax parallax-one">
-        <div class="title">
-          <h1>Jonathan Scoville</h1>
-          <h3>Front End Developer</h3>
-        </div>
-        <div class="work-button">
-          <a href="#content-one"><p>About</p></a>
-        </div></a>
+        <header> 
+          <div class="title">
+            <h1>Jonathan Scoville</h1>
+            <h3>Front End Developer</h3>
+          </div>
+          <div class="work-button">
+            <a href="#content-one"><p>About</p></a>            
+          </div>
+          <div class="social-media">
+
+            <ul>
+              <li><a target="_blank" href="https://github.com/deadhead84"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/jonscoville"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/jon_scoville"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+              <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+            </ul>
+
+          </div>
+        </header>
       </section>
-    </header>
 
     <section class="module content content-one" id="content-one">
     <h1>About Me</h1>
@@ -45,10 +57,11 @@
         <div class="row project-display">
           <h1>Projects</h1>
             <div class="col-md-4 about-one">
-              <img class="imgages" src="css/images/travels-app.png">
+              <h2>Travel App</h2>
+              <a href="travelsapp/index.html"><img class="imgages" src="css/images/travels-app.jpg"></a>
             </div>
             <div class="col-md-4 about-two">
-              <a href="http://deadhead84.github.io"><img class="imgages" src="css/images/scovilleautoservices.png"></a>
+              <a href="http://deadhead84.github.io"><img class="imgages" src="css/images/scovilleautoservices.jpg"></a>
             </div>
             <div class="col-md-4 about-three">
               <img class="imgages" src="css/images/family.jpg">
@@ -103,7 +116,7 @@ $(document).ready(function(){
       }, 800, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+        location.hash = hash;
       });
     } // End if
   });
